@@ -1,5 +1,4 @@
 #!/bin/bash
-#Script to automate my housing search
 curl --silent https://www.capitolhillhousing.org/findyourapartment/ > $temp_file.html
 NewUpdate=$(lynx  -dump $temp_file.html | grep update)
 LastUpdate=$NewUpdate
