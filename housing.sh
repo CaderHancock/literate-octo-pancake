@@ -9,13 +9,13 @@ while true; do
 
 	while true; do
 	
-		let "MinuteCount+=1"
+	#	let "MinuteCount+=1"
 		
-		if [ "$MinuteCount==1440" ]
-		then
-			echo "Running" | mail "4252447077@sms.myboostmobile.com"
-			MinuteCount=0
-		fi
+	#	if [ "$MinuteCount==1440" ]
+	#	then
+	#		echo "Running" | mail "4252447077@sms.myboostmobile.com"
+	#		MinuteCount=0
+	#	fi
         	
 		curl --silent https://www.capitolhillhousing.org/findyourapartment/ > $temp_file.html
         	Newupdate=$(lynx  -dump $temp_file.html | grep update)
