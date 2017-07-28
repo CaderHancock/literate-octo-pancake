@@ -20,10 +20,11 @@ while true; do
         	Newupdate=$(lynx  -dump $temp_file.html | grep update)
         	if [ "$NewUpdate" != "$LastUpdate" ] 
 		then
+			echo "updated" | mail "4252447077@sms.myboostmobile.com"
 			break
 		fi
 
-		echo "in search loop"
+		#echo "in search loop"
         	sleep 60
 	done
 
