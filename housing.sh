@@ -33,6 +33,6 @@ while true; do
 
 	#Search for builings that are in the %50 median income bracket and sent an sms
 	lynx  -dump $temp_file.html | grep -B 3 50 | mail "4252447077@sms.myboostmobile.com"
-	echo "Mail Time"
+#	echo "Mail Time"
 
 done
